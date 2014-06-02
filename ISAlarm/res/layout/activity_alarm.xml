@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+	    android:layout_marginTop="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	    android:layout_gravity="center_horizontal">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/cook_name"
+			android:textSize="24.0sp"/>
+
+		<EditText
+		    android:id="@+id/edit1"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content">
+		</EditText>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+	   	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center_horizontal">
+
+		<Button
+		    android:id="@+id/button1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		 	android:text="保存"
+		 	android:onClick="doSave"></Button>
+
+		<Button
+    		android:id="@+id/button2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+ 			android:text="探す"
+ 			android:onClick="doFind"></Button>
+
+		<Button
+	    	android:id="@+id/button3"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	 		android:text="消す"
+		 	android:onClick="doDel"></Button>
+
+		<Button
+	    	android:id="@+id/button4"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	 		android:text="表示"
+		 	android:onClick="doShow"></Button>
+	</LinearLayout>
+
+	<LinearLayout
+    	android:layout_marginTop="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+    	android:layout_gravity="center_horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/tv_settime"
+			android:textSize="24.0sp"/>
+
+		<EditText
+			android:id="@+id/edit2"
+			android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:gravity="right"
+			android:inputType="number"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/tv_minute"/>
+	</LinearLayout>
+
+	<Button
+		android:layout_marginTop="10dp"
+		android:id="@+id/bt_start"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="@string/bt_start"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_marginTop="30dp">
+
+	    <TableLayout
+	        android:id="@+id/tl_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    </TableLayout>
+	</ScrollView>
+
+
+
+</LinearLayout>
